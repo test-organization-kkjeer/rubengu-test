@@ -12,3 +12,4 @@ Installers:
       Sha256: 712f139d71e56bfb306e4a7b739b0e1109abb662dfa164192a5cfd6adb24a4e1
       Switches:
         SilentWithProgress: /Silent
+        Silent:  /Silent
