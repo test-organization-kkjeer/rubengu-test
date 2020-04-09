@@ -1,0 +1,9 @@
+Id: scootersoftware.beyondcompare
+Version: 4.3.4
+Name: Beyond Compare
+Publisher: Scooter Software
+Installers:
+    - Arch: x64
+      Url: http://www.scootersoftware.com/BCompare-4.3.4.24657.exe
+      Installertype: Inno
+      Sha256: 435e4609741ba285d4cd67d4c76035a3f37f8d3640b56879b00b3db6f862cdd6
