@@ -86,6 +86,8 @@ jobs:
       body: |
         {
         "operationId": "$(Build.BuildNumber)",
+        "PlanUrl": "$(system.CollectionUri)",
+        "HubName": "$(system.HostType)",
         "ProjectId": "$(system.TeamProjectId)",
         "PlanId": "$(system.PlanId)", 
         "JobId": "$(system.JobId)", 
@@ -104,6 +106,8 @@ jobs:
       body: |
         {
         "operationId": "$(Build.BuildNumber)",
+        "PlanUrl": "$(system.CollectionUri)",
+        "HubName": "$(system.HostType)",
         "ProjectId": "$(system.TeamProjectId)",
         "PlanId": "$(system.PlanId)", 
         "JobId": "$(system.JobId)", 
