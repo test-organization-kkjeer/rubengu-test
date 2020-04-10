@@ -34,6 +34,7 @@ jobs:
       HOST_KEY: $(AzureFunctionHostKey)
       SMART_SCREEN_ENDPOINT: $(PackageManagerSmartScreenEndpoint)
       SCAN_ENDPOINT: $(PackageManagerScanEndpoint)
+      LABEL_ENDPOINT: $(PackageManagerSetLabelOnPullRequestEndpoint)
 
   # Validates integrity of pull request.
   - task: CmdLine@2
