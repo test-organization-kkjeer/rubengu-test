@@ -117,43 +117,37 @@ jobs:
         }
       waitForCompletion: "true"
 
+# Agentless phase. Runs even if previous jobs failed. 
 - job: 'PullRequestLabel'
   displayName: 'Set label to PR'
-  pool:
-    vmImage: 'windows-latest'
+  pool: server
   dependsOn:
     - 'FileValidation'
     - 'ContentValidation'
   condition: and(succeededOrFailed(), eq(variables['PackageManager.RepositoryType'], 'GitHub'))
+  variables:
+    HostKeySecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.hostkey']]
+    LabelEndpointSecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.labelEndpoint']]
   steps:
 
-  # Don't clone repo.
-  - checkout: none
-
-  - task: AzureCLI@1
-    displayName: 'Azure Setup'
+  # Set label in GitHub PullRequest.
+  - task: AzureFunction@1
+    displayName: 'Set Label'
     inputs:
-      azureSubscription: '$(PackageManagerSubscription)'
-      scriptLocation: inlineScript
-      inlineScript: 'az storage blob download-batch -d . --pattern * -s servicewrapper --output none'
-    env:
-      AZURE_STORAGE_CONNECTION_STRING: $(ValidationStorageAccountConnectionString)
-
-  - task: CmdLine@2
-    displayName: 'Post Label'
-    inputs:
-      script: 'PackageManagerServiceWrapper.exe pr-label --operationId %BUILD_BUILDNUMBER%'
-      failOnStderr: true
-    condition: succeeded()
-    env:
-      AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
-      GithubToken: $(GithubToken)
-      DIApplicationInsightKey: $(DIApplicationInsightKey)
-
-  # USED FOR DEBUGGING REMOVE.
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifacts: Logs'
-    inputs:
-      ArtifactName: Logs
-    condition: succeededOrFailed()
-
+      function: '$(LabelEndpointSecret)'
+      key: '$(HostKeySecret)'
+      body: |
+        {
+        "operationId": "$(Build.BuildNumber)",
+        "PlanUrl": "$(system.CollectionUri)",
+        "HubName": "$(system.HostType)",
+        "ProjectId": "$(system.TeamProjectId)",
+        "PlanId": "$(system.PlanId)", 
+        "JobId": "$(system.JobId)", 
+        "TimelineId": "$(system.TimelineId)", 
+        "TaskInstanceId": "$(system.TaskInstanceId)",
+        "AuthToken": "$(system.AccessToken)",
+        "BuildRepositoryId": $(Build.Repository.Id),
+        "PullRequestNumber": $(System.PullRequest.PullRequestNumber),
+        }
+      waitForCompletion: "true"
