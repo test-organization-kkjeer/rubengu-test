@@ -129,6 +129,7 @@ jobs:
   variables:
     HostKeySecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.hostkey']]
     LabelEndpointSecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.labelEndpoint']]
+    RepositoryId: $[ dependencies.FileValidation.outputs['pkgmgrsetup.repoId']]
   steps:
 
   # Set label in GitHub PullRequest.
@@ -148,7 +149,7 @@ jobs:
         "TimelineId": "$(system.TimelineId)", 
         "TaskInstanceId": "$(system.TaskInstanceId)",
         "AuthToken": "$(system.AccessToken)",
-        "BuildRepositoryId": $(Build.Repository.Id),
+        "BuildRepositoryId": $(RepositoryId),
         "PullRequestNumber": $(System.PullRequest.PullRequestNumber),
         }
       waitForCompletion: "true"
