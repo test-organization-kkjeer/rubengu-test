@@ -151,6 +151,6 @@ jobs:
         "TaskInstanceId": "$(system.TaskInstanceId)",
         "AuthToken": "$(system.AccessToken)",
         "BuildRepositoryId": "$(RepositoryId)",
-        "PullRequestNumber": $(System.PullRequest.PullRequestNumber),
+        "PullRequestNumber": "$(System.PullRequest.PullRequestNumber)",
         }
       waitForCompletion: "true"
