@@ -150,7 +150,7 @@ jobs:
         "TimelineId": "$(system.TimelineId)", 
         "TaskInstanceId": "$(system.TaskInstanceId)",
         "AuthToken": "$(system.AccessToken)",
-        "BuildRepositoryId": $(RepositoryId),
+        "BuildRepositoryId": "$(RepositoryId)",
         "PullRequestNumber": $(System.PullRequest.PullRequestNumber),
         }
       waitForCompletion: "true"
