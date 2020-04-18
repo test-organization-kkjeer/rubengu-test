@@ -45,7 +45,7 @@ jobs:
   - task: CmdLine@2
     displayName: 'Validate Manifests'
     inputs:
-      script: 'PackageManagerServiceWrapper.exe rebuild --operationId %BUILD_BUILDNUMBER%'
+      script: 'WinGetSvcWrapper.exe rebuild --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
     condition: succeeded()
     env:
@@ -55,9 +55,6 @@ jobs:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
-  # USED FOR DEBUGGING.
-  # Remove when Task 25417700: "[PackageManager][Service] Add an azure function to
-  # post logs from code that runs in the pipeline to Geneva" is completed.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
     inputs:
@@ -123,7 +120,7 @@ jobs:
   - task: CmdLine@2
     displayName: 'Publish'
     inputs:
-      script: 'PackageManagerServiceWrapper.exe rebuild-publish --operationId %BUILD_BUILDNUMBER%'
+      script: 'WinGetSvcWrapper.exe rebuild-publish --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
     condition: succeeded()
     env:
@@ -139,14 +136,12 @@ jobs:
       PackageManagerConnectionStringKv: $(PackageManagerConnectionStringKv)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
-  # USED FOR DEBUGGING.
-  # Remove when Task 25417700: "[PackageManager][Service] Add an azure function to
-  # post logs from code that runs in the pipeline to Geneva" is completed.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
     inputs:
       ArtifactName: Logs
     condition: succeededOrFailed()
+
 
 # Agent phase. Depends on previous job.
 - job: 'Cleanup'
@@ -178,7 +173,7 @@ jobs:
   - task: CmdLine@2
     displayName: 'Package Manager Cleanup'
     inputs:
-      script: 'PackageManagerServiceWrapper.exe rebuild-cleanup --operationId %BUILD_BUILDNUMBER%'
+      script: 'WinGetSvcWrapper.exe rebuild-cleanup --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
     condition: succeeded()
     env:
@@ -186,9 +181,6 @@ jobs:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
-  # USED FOR DEBUGGING.
-  # Remove when Task 25417700: "[PackageManager][Service] Add an azure function to
-  # post logs from code that runs in the pipeline to Geneva" is completed.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
     inputs:

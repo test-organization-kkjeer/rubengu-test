@@ -47,7 +47,7 @@ jobs:
   - task: CmdLine@2
     displayName: 'Validate Commits'
     inputs:
-      script: 'PackageManagerServiceWrapper.exe validate-commits --operationId %BUILD_BUILDNUMBER%'
+      script: 'WinGetSvcWrapper.exe validate-commits --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
     condition: succeeded()
     env:
@@ -57,9 +57,6 @@ jobs:
       PackagePublisher: $(PackagePublisher)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
-  # USED FOR DEBUGGING.
-  # Remove when Task 25417700: "[PackageManager][Service] Add an azure function to
-  # post logs from code that runs in the pipeline to Geneva" is completed.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
     inputs:
@@ -125,7 +122,7 @@ jobs:
   - task: CmdLine@2
     displayName: 'Publish'
     inputs:
-      script: 'PackageManagerServiceWrapper.exe publish --operationId %BUILD_BUILDNUMBER%'
+      script: 'WinGetSvcWrapper.exe publish --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
     condition: succeeded()
     env:
@@ -133,9 +130,6 @@ jobs:
       CacheConnectionString: $(ActiveCacheConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
-  # USED FOR DEBUGGING.
-  # Remove when Task 25417700: "[PackageManager][Service] Add an azure function to
-  # post logs from code that runs in the pipeline to Geneva" is completed.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
     inputs:

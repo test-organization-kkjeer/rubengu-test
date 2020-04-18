@@ -35,12 +35,13 @@ jobs:
       SMART_SCREEN_ENDPOINT: $(PackageManagerSmartScreenEndpoint)
       SCAN_ENDPOINT: $(PackageManagerScanEndpoint)
       LABEL_ENDPOINT: $(PackageManagerSetLabelOnPullRequestEndpoint)
+      CLEANUP_ENDPOINT: $(PackageManagerCleanupEndpoint)
 
   # Validates integrity of pull request.
   - task: CmdLine@2
     displayName: 'Validate Pull Request'
     inputs:
-      script: 'PackageManagerServiceWrapper.exe process-pr --operationId %BUILD_BUILDNUMBER%'
+      script: 'WinGetSvcWrapper.exe process-pr --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
     condition: succeeded()
     env:
@@ -51,13 +52,13 @@ jobs:
   - task: CmdLine@2
     displayName: 'Validate Manifest'
     inputs:
-      script: 'PackageManagerServiceWrapper.exe validate-manifests --operationId %BUILD_BUILDNUMBER%'
+      script: 'WinGetSvcWrapper.exe validate-manifests --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
     condition: succeeded()
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
-
+  
   # USED FOR DEBUGGING REMOVE.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
@@ -125,11 +126,12 @@ jobs:
   dependsOn:
     - 'FileValidation'
     - 'ContentValidation'
-  condition: succeededorfailed()
+  condition: succeededOrFailed()
   variables:
     HostKeySecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.hostkey']]
     LabelEndpointSecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.labelEndpoint']]
     RepositoryId: $[ dependencies.FileValidation.outputs['pkgmgrsetup.repoId']]
+    CleanupEndpointSecret: $[ dependencies.filevalidation.outputs['pkgmgrsetup.cleanupEndpoint']]
   steps:
 
   # Set label in GitHub PullRequest.
