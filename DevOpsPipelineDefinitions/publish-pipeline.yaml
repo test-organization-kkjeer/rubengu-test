@@ -70,8 +70,8 @@ jobs:
   dependsOn:
     - 'CommitProcessing'
   variables:
-    HostKeySecret: $[ dependencies.CommitProcessing.outputs['pkgmgrsetup.hostkey']]
-    SignEndpointSecret: $[ dependencies.CommitProcessing.outputs['pkgmgrsetup.signEndpoint']]
+    HostKeySecret: $[ dependencies.CommitProcessing.outputs['wingetsetup.hostkey']]
+    SignEndpointSecret: $[ dependencies.CommitProcessing.outputs['wingetsetup.signEndpoint']]
   steps:
 
   # Sign Package Manager package.

@@ -68,8 +68,8 @@ jobs:
   dependsOn:
     - 'Rebuild'
   variables:
-    HostKeySecret: $[ dependencies.Rebuild.outputs['pkgmgrsetup.hostkey']]
-    SignEndpointSecret: $[ dependencies.Rebuild.outputs['pkgmgrsetup.signEndpoint']]
+    HostKeySecret: $[ dependencies.Rebuild.outputs['wingetsetup.hostkey']]
+    SignEndpointSecret: $[ dependencies.Rebuild.outputs['wingetsetup.signEndpoint']]
   steps:
 
   # Sign Package Manager package.

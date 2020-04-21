@@ -74,9 +74,9 @@ jobs:
   dependsOn:
     - 'FileValidation'
   variables:
-    HostKeySecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.hostkey']]
-    SmartScreenEndpointSecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.smartScreenEndpoint']]
-    ScanEndpointSecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.scanEndpoint']]
+    HostKeySecret: $[ dependencies.FileValidation.outputs['wingetsetup.hostkey']]
+    SmartScreenEndpointSecret: $[ dependencies.FileValidation.outputs['wingetsetup.smartScreenEndpoint']]
+    ScanEndpointSecret: $[ dependencies.FileValidation.outputs['wingetsetup.scanEndpoint']]
   steps:
 
   # Scans all the urls from manifest contents.
@@ -128,10 +128,10 @@ jobs:
     - 'ContentValidation'
   condition: succeededOrFailed()
   variables:
-    HostKeySecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.hostkey']]
-    LabelEndpointSecret: $[ dependencies.FileValidation.outputs['pkgmgrsetup.labelEndpoint']]
-    RepositoryId: $[ dependencies.FileValidation.outputs['pkgmgrsetup.repoId']]
-    CleanupEndpointSecret: $[ dependencies.filevalidation.outputs['pkgmgrsetup.cleanupEndpoint']]
+    HostKeySecret: $[ dependencies.FileValidation.outputs['wingetsetup.hostkey']]
+    LabelEndpointSecret: $[ dependencies.FileValidation.outputs['wingetsetup.labelEndpoint']]
+    RepositoryId: $[ dependencies.FileValidation.outputs['wingetsetup.repoId']]
+    CleanupEndpointSecret: $[ dependencies.filevalidation.outputs['wingetsetup.cleanupEndpoint']]
   steps:
 
   # Set label in GitHub PullRequest.
