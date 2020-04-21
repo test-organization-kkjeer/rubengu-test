@@ -42,7 +42,7 @@ jobs:
     workingDirectory: scripts
     env:
       HOST_KEY: $(AzureFunctionHostKey)
-      SIGN_ENDPOINT: $(PackageManagerSignEndpoint)
+      SIGN_ENDPOINT: $(AzFuncSignEndpoint)
 
   - task: CmdLine@2
     displayName: 'Validate Commits'

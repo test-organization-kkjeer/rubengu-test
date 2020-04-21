@@ -32,10 +32,10 @@ jobs:
     workingDirectory: scripts
     env:
       HOST_KEY: $(AzureFunctionHostKey)
-      SMART_SCREEN_ENDPOINT: $(PackageManagerSmartScreenEndpoint)
-      SCAN_ENDPOINT: $(PackageManagerScanEndpoint)
-      LABEL_ENDPOINT: $(PackageManagerSetLabelOnPullRequestEndpoint)
-      CLEANUP_ENDPOINT: $(PackageManagerCleanupEndpoint)
+      SMART_SCREEN_ENDPOINT: $(AzFuncSmartScreenEndpoint)
+      SCAN_ENDPOINT: $(AzFuncScanEndpoint)
+      LABEL_ENDPOINT: $(AzFuncSetLabelOnPullRequestEndpoint)
+      CLEANUP_ENDPOINT: $(AzFuncCleanupEndpoint)
 
   # Validates integrity of pull request.
   - task: CmdLine@2

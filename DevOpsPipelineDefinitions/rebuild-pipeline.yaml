@@ -40,7 +40,7 @@ jobs:
     workingDirectory: scripts
     env:
       HOST_KEY: $(AzureFunctionHostKey)
-      SIGN_ENDPOINT: $(PackageManagerSignEndpoint)
+      SIGN_ENDPOINT: $(AzFuncSignEndpoint)
 
   - task: CmdLine@2
     displayName: 'Validate Manifests'
@@ -131,9 +131,9 @@ jobs:
       CacheAStorageAccountName: $(CacheAStorageAccountName)
       CacheBStorageAccountConnectionString: $(CacheBStorageAccountConnectionString)
       CacheBStorageAccountName: $(CacheBStorageAccountName)
-      PackageManagerSubscriptionId: $(PackageManagerSubscriptionId)
-      PackageManagerCdnProfile: $(PackageManagerCdnProfile)
-      PackageManagerConnectionStringKv: $(PackageManagerConnectionStringKv)
+      WinGetSubscriptionId: $(WinGetSubscriptionId)
+      CdnProfileName: $(CdnProfileName)
+      ConnectionStringKvName: $(ConnectionStringKvName)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
   - task: PublishBuildArtifacts@1
