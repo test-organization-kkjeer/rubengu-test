@@ -19,16 +19,16 @@ jobs:
   - task: AzureCLI@1
     displayName: 'Azure Setup'
     inputs:
-      azureSubscription: '$(PackageManagerSubscription)'
+      azureSubscription: '$(WinGet.Subscription)'
       scriptLocation: inlineScript
       inlineScript: 'az storage blob download-batch -d . --pattern * -s servicewrapper --output none'
     env:
       AZURE_STORAGE_CONNECTION_STRING: $(ValidationStorageAccountConnectionString)
 
-  # PackageManager setup
-  - script: 'pkgmgr_validation_setup.cmd'
-    name: 'pkgmgrsetup'
-    displayName: 'PackageManager Setup'
+  # WinGet setup
+  - script: 'winget_validation_setup.cmd'
+    name: 'wingetsetup'
+    displayName: 'WinGet Setup'
     workingDirectory: scripts
     env:
       HOST_KEY: $(AzureFunctionHostKey)
@@ -137,7 +137,7 @@ jobs:
   # Set label in GitHub PullRequest.
   - task: AzureFunction@1
     displayName: 'Set Label'
-    condition: eq(variables['PackageManager.RepositoryType'], 'GitHub')
+    condition: eq(variables['WinGet.RepositoryType'], 'GitHub')
     inputs:
       function: '$(LabelEndpointSecret)'
       key: '$(HostKeySecret)'

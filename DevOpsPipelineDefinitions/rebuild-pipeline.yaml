@@ -27,16 +27,16 @@ jobs:
   - task: AzureCLI@1
     displayName: 'Azure Setup'
     inputs:
-      azureSubscription: '$(PackageManagerSubscription)'
+      azureSubscription: '$(WinGet.Subscription)'
       scriptLocation: inlineScript
       inlineScript: 'az storage blob download-batch -d . --pattern * -s servicewrapper --output none'
     env:
       AZURE_STORAGE_CONNECTION_STRING: $(ValidationStorageAccountConnectionString)
 
-  # PackageManager setup
-  - script: 'pkgmgr_publish_setup.cmd'
-    name: 'pkgmgrsetup'
-    displayName: 'PackageManager Setup'
+  # WinGet setup
+  - script: 'winget_publish_setup.cmd'
+    name: 'wingetsetup'
+    displayName: 'WinGet Setup'
     workingDirectory: scripts
     env:
       HOST_KEY: $(AzureFunctionHostKey)
@@ -50,7 +50,6 @@ jobs:
     condition: succeeded()
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
-      PackageManagerEnvironment: $(PackageManagerEnvironment)
       PackagePublisher: $(PackagePublisher)
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
@@ -110,7 +109,7 @@ jobs:
   - task: AzureCLI@1
     displayName: 'Azure Setup'
     inputs:
-      azureSubscription: '$(PackageManagerSubscription)'
+      azureSubscription: '$(WinGet.Subscription)'
       scriptLocation: inlineScript
       inlineScript: 'az storage blob download-batch -d . --pattern * -s servicewrapper --output none'
     env:
@@ -164,7 +163,7 @@ jobs:
   - task: AzureCLI@1
     displayName: 'Azure Setup'
     inputs:
-      azureSubscription: '$(PackageManagerSubscription)'
+      azureSubscription: '$(WinGet.Subscription)'
       scriptLocation: inlineScript
       inlineScript: 'az storage blob download-batch -d . --pattern * -s servicewrapper --output none'
     env:
