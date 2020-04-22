@@ -51,6 +51,7 @@ jobs:
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       PackagePublisher: $(PackagePublisher)
+      PackageName: $(PackageName)
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 

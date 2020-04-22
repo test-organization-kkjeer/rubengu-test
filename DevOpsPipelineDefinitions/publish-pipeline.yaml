@@ -54,6 +54,7 @@ jobs:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       CacheConnectionString: $(ActiveCacheConnectionString)
       PackagePublisher: $(PackagePublisher)
+      PackageName: $(PackageName)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
   - task: PublishBuildArtifacts@1
