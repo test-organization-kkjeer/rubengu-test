@@ -1,0 +1,15 @@
+Id: Citrix.Workspace	
+Version: 4.12
+
+Name: Workspace App
+Publisher: Citrix
+Homepage: https://www.citrix.com/products/citrix-workspace/
+Description:  Citrix Workspace app for Windows is easy-to-install software that provides access to your applications and desktops using Citrix Virtual Apps and Desktops from a remote client device. Citrix Workspace app provides access from your desktop, Start menu, Citrix Workspace user interface, or web browsers. 
+Installers: 
+    - Arch: x64
+      Url: https://downloads.citrix.com/17600/CitrixWorkspaceApp.exe?__gda__=1586757115_b184ca8f6dea0f6ab87de2b6c72569d7
+      Sha256: 9d7938052358f419d1fc895c227dd9c9023a727ea2e067bafee980b047599e24
+      InstallerType: exe
+      Switches:
+        Silent: /Silent
+        SilentWithProgress: /Silent

@@ -1,0 +1,18 @@
+Id: apple.itunes
+Version: 12.10.5.12
+Name: iTunes
+Publisher: Apple
+Homepage: https://www.apple.com/
+License: Commercial
+Description: iTunes is the easiest way to enjoy your favorite music, movies, TV shows, and more on your PC.
+AppMoniker: iTunes
+Installers: 
+  - Arch: x64
+    Url: https://www.apple.com/itunes/download/win64
+    InstallerType: exe
+    Sha256: CF35247004123B3C710868C85EF61D08B378507EC32C2D7555EBB2EFAE0E530C
+    Language: en-US
+    Scope: user
+    Switches: 
+      Silent: /quiet
+      SilentWithProgress: /passive

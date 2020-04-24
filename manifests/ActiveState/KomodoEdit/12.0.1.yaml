@@ -1,0 +1,23 @@
+Id: ActiveState.KomodoEdit
+Name: Komodo Edit
+AppMoniker: komodo.exe
+Version: 12.0.1
+Publisher: ActiveState
+Author: Adobe
+License: ActiveState Komodo IDE License
+LicenseUrl: https://www.activestate.com/products/komodo-ide/license-agreement/
+MinOSVersion: 10.0.0.0
+Homepage: https://www.activestate.com/products/komodo-edit/
+Tags: "komodoEdit,textEditor"
+InstallerType: msi
+ 
+# ======================= Installers  ================== 
+ 
+Installers: 
+  - Arch: x64
+    Url: https://downloads.activestate.com/Komodo/releases/12.0.1/Komodo-Edit-12.0.1-18441.msi
+    Sha256: 8D677839B7C3651F43DF2C1E12EC5F2A6422E4E86B9617DAB74563D470988D54
+    Language: en-US
+    Scope: user
+    Switches: 
+      Custom: /QUIET /NORESTART

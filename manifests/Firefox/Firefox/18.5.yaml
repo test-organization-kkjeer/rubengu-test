@@ -1,0 +1,23 @@
+Id: Firefox.Firefox
+Name: Firefox
+AppMoniker: firefox.exe
+Version: 18.5
+Publisher: Mozilla
+Author: Mozilla 
+License: The Mozilla Foundation
+LicenseUrl: https://www.mozilla.org/en-US/foundation/licensing/
+MinOSVersion: 10.0.0.0
+Homepage: https://www.mozilla.org/en-US/firefox/new/
+Tags: "firefox,browser"
+InstallerType: msi
+ 
+# ======================= Installers  ================== 
+ 
+Installers: 
+  - Arch: x64
+    Url: https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en-US
+    Sha256: 69324C59A45E7795D577F0BB98ABE342D30899A734F519A39844500A4A6BD9CC
+    Language: en-US
+    Scope: user
+    Switches: 
+      Custom: /QUIET /NORESTART

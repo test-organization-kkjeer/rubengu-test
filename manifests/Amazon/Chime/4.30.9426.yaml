@@ -1,0 +1,20 @@
+Id: Amazon.Chime
+Name: AmazonChime
+AppMoniker: amazonchime
+Version: 4.30.9426
+Publisher: Amazon
+Author: Amazon
+License: MIT License
+LicenseUrl: https://github.com/microsoft/msix-packaging/blob/master/LICENSE
+MinOSVersion: 10.0.0.0
+Homepage: https://aws.amazon.com/chime/download/
+Tags: "amazon,amazonchime,chime"
+InstallerType: inno
+
+# ======================= Installers  ==================
+
+Installers:
+  - Arch: x64
+    Url: https://clients.chime.aws/win/releases/Chime.4.30.9449.exe
+    Sha256: 23B746781E6B436C7910006E6060AF710824E3F8B33C0CA84F455887DB021605
+    Language: en-US

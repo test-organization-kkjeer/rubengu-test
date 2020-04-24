@@ -1,0 +1,25 @@
+Id: evernote.evernote
+Name: Evernote
+AppMoniker: evernote
+Version: 6.21.2.8716
+Publisher: Evernote
+Author: Evernote
+License: MIT License
+LicenseUrl: https://github.com/microsoft/msix-packaging/blob/master/LICENSE
+MinOSVersion: 10.0.0.0
+Homepage: https://www.evernote.com
+Tags: "evernote,notes,cloud,online"
+InstallerType: exe
+
+
+# ======================= Installers  ================== 
+
+Installers: 
+  - Arch: x64 
+    Url: https://cdn1.evernote.com/win6/public/Evernote_6.21.2.8716.exe
+    Sha256: 495F4B17FF1D558054F450FDBD27D1C753040DCF46A664C1075F95B401FE8040
+    Language: en-US 
+    Scope: user
+    Switches: 
+      Silent: /qn
+      SilentWithProgress: /qn

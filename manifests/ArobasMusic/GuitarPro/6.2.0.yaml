@@ -1,0 +1,11 @@
+Id: ArobasMusic.GuitarPro
+Name: GuitarPro
+Version: 6.2.0
+Publisher: GuitarPro
+Homepage: https://www.guitar-pro.com/
+License: Try Before You Buy
+InstallerType: Inno
+Installers:
+  - Arch: x64
+    Url: https://downloads.guitar-pro.com/gp6/gp6-full-win-r11686.exe
+    Sha256: 877776C1696B4EB1A377F4B77C2013674ECD3AC9496132E3E23B4AD5DACB45F1
