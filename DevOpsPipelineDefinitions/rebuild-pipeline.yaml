@@ -8,11 +8,36 @@ pr: none
 
 jobs:
 
+steps:
+- task: InvokeRESTAPI@1
+  displayName: 'Invoke REST API: PATCH'
+  inputs:
+    connectionType: connectedServiceName
+    serviceConnection: 'Build Service Connection'
+    method: PATCH
+    body: |
+     {
+         "definition":
+         {
+             "queueStatus": "paused"
+         }
+     }
+    urlSuffix: 'https://dev.azure.com/microsoft/$(system.teamProject)/_apis/build/builds/49798?api-version=5.1'
+
+# Agentless phase. Depends on previous job. 
+- job: 'PausePipeline'
+  pool: server
+  timeoutInMinutes: 1500
+  displayName: 'Pause Publish pipeline.'
+  steps:
+
 # Agent phase.
 - job: 'Rebuild'
   displayName: 'Start Rebuild'
   pool:
     vmImage: 'windows-latest'
+  dependsOn:
+    - 'PausePipeline'
   variables:
     skipComponentGovernanceDetection: ${{ true }}
     runCodesignValidationInjection: ${{ false }}

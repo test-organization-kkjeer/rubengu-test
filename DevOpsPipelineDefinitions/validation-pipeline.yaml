@@ -13,6 +13,9 @@ jobs:
   displayName: 'Pull Request Validation'
   pool:
     vmImage: 'windows-latest'
+  variables:
+    skipComponentGovernanceDetection: ${{ true }}
+    runCodesignValidationInjection: ${{ false }}
   steps:
 
   # Downloads all the setup files and its dependencies.
