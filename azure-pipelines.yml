@@ -6,6 +6,9 @@
 trigger: none
 pr: none
 
+pool:
+  vmImage: windows-2019
+
 steps:
 - script: echo Hello, world! > file.txt
   displayName: 'Run a one-line script'
