@@ -124,16 +124,14 @@ jobs:
     condition: succeeded()
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
-      AzureServicesAuthConnectionString: $(AzureServicesAuthConnectionString)
-      CacheConnectionString: $(BackupCacheConnectionString)
-      CacheAStorageAccountConnectionString: $(CacheAStorageAccountConnectionString)
-      CacheAStorageAccountName: $(CacheAStorageAccountName)
-      CacheBStorageAccountConnectionString: $(CacheBStorageAccountConnectionString)
-      CacheBStorageAccountName: $(CacheBStorageAccountName)
-      WinGetSubscriptionId: $(WinGetSubscriptionId)
-      CdnProfileName: $(CdnProfileName)
-      ConnectionStringKvName: $(ConnectionStringKvName)
+      CacheConnectionString: $(CacheStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifacts: Logs'
+    inputs:
+      ArtifactName: Logs
+    condition: succeededOrFailed()
 
 # Agent phase. Depends on previous job.
 - job: 'Cleanup'

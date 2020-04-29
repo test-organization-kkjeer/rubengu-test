@@ -52,7 +52,7 @@ jobs:
     condition: succeeded()
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
-      CacheConnectionString: $(ActiveCacheConnectionString)
+      CacheConnectionString: $(CacheStorageAccountConnectionString)
       PackagePublisher: $(PackagePublisher)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
@@ -126,7 +126,7 @@ jobs:
     condition: succeeded()
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
-      CacheConnectionString: $(ActiveCacheConnectionString)
+      CacheConnectionString: $(CacheStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
   - task: PublishBuildArtifacts@1
