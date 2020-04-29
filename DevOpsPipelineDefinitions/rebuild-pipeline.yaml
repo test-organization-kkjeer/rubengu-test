@@ -1,4 +1,4 @@
-# Rebuild pipeline for Windows Package Manager.
+# Rebuild pipeline for WinGet.
 
 # Name of the run
 name: '$(Build.DefinitionName)-$(Build.DefinitionVersion)-$(Date:yyyyMMdd)-$(Rev:r)'
@@ -51,15 +51,8 @@ jobs:
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       PackagePublisher: $(PackagePublisher)
-      PackageName: $(PackageName)
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
-
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifacts: Logs'
-    inputs:
-      ArtifactName: Logs
-    condition: succeededOrFailed()
 
 # Agentless phase. Depends on previous job. 
 - job: 'SignPackage'
@@ -73,7 +66,7 @@ jobs:
     SignEndpointSecret: $[ dependencies.Rebuild.outputs['wingetsetup.signEndpoint']]
   steps:
 
-  # Sign Package Manager package.
+  # Sign package.
   - task: AzureFunction@1
     displayName: 'Signing package'
     inputs:
@@ -136,13 +129,6 @@ jobs:
       ConnectionStringKvName: $(ConnectionStringKvName)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifacts: Logs'
-    inputs:
-      ArtifactName: Logs
-    condition: succeededOrFailed()
-
-
 # Agent phase. Depends on previous job.
 - job: 'Cleanup'
   displayName: 'Cleanup'
@@ -171,7 +157,7 @@ jobs:
       AZURE_STORAGE_CONNECTION_STRING: $(ValidationStorageAccountConnectionString)
 
   - task: CmdLine@2
-    displayName: 'Package Manager Cleanup'
+    displayName: 'WinGet Cleanup'
     inputs:
       script: 'WinGetSvcWrapper.exe rebuild-cleanup --operationId %BUILD_BUILDNUMBER%'
       failOnStderr: true
@@ -180,9 +166,3 @@ jobs:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
-
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifacts: Logs'
-    inputs:
-      ArtifactName: Logs
-    condition: succeededOrFailed()
