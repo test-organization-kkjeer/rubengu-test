@@ -54,6 +54,12 @@ jobs:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifacts: Logs'
+    inputs:
+      ArtifactName: Logs
+    condition: succeededOrFailed()
+
 # Agentless phase. Depends on previous job. 
 - job: 'SignPackage'
   pool: server
@@ -166,3 +172,9 @@ jobs:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifacts: Logs'
+    inputs:
+      ArtifactName: Logs
+    condition: succeededOrFailed()
