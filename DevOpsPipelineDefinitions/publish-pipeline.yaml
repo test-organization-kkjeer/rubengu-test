@@ -47,6 +47,9 @@ jobs:
   - script: 'dir /s /b "C:\Program Files (x86)\Windows Kits\10\bin"'
     displayName: 'Command Line Script'
 
+  - script : 'REG QUERY "HKLM\SOFTWARE\Microsoft\Windows Kits\Installed Roots" /s'
+    displayName: 'Reg query'
+
   - task: CmdLine@2
     displayName: 'Validate Commits'
     inputs:
