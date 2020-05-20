@@ -44,6 +44,9 @@ jobs:
       HOST_KEY: $(AzureFunctionHostKey)
       SIGN_ENDPOINT: $(AzFuncSignEndpoint)
 
+  - script: 'dir /s /b "C:\Program Files (x86)\Windows Kits\10\bin"'
+    displayName: 'Command Line Script'
+
   - task: CmdLine@2
     displayName: 'Validate Commits'
     inputs:
