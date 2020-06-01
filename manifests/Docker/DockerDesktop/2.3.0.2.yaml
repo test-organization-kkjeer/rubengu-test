@@ -10,3 +10,7 @@ Installers:
       Url: https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe
       InstallerType: exe
       Sha256: 61B9541FC208336EE35AEEE06F96CD6CD36D7FB44A64DF42BC00A51E3A749841
+    Switches:
+      Silent: /S
+      SilentWithProgress: /S
+
