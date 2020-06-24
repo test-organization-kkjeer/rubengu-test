@@ -9,4 +9,4 @@ Installers:
     - Arch: x64
       Url: https://github.com/microsoft/PowerToys/releases/download/v0.15.2/PowerToysSetup-0.15.2-x64.msix
       InstallerType: Msix
-      Sha256:  BBE179C8DF4094D2818F816727FB691506322C8966CD2D99791F3D654872A630
+      Sha256:  BBE179C8DF4094D2818F816727FB691506322C8966CD2D99791F3D654872A630 
