@@ -44,12 +44,6 @@ jobs:
       HOST_KEY: $(AzureFunctionHostKey)
       SIGN_ENDPOINT: $(AzFuncSignEndpoint)
 
-  - script: 'dir /s "C:\Program Files (x86)\Windows Kits\10\Platforms\UAP"'
-    displayName: 'Command Line Script'
-
-  - script : 'REG QUERY "HKLM\SOFTWARE\Microsoft\Windows Kits\Installed Roots" /s'
-    displayName: 'Reg query'
-
   - task: CmdLine@2
     displayName: 'Validate Commits'
     inputs:
