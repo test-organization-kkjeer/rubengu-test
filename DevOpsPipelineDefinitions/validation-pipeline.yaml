@@ -39,6 +39,7 @@ jobs:
       SCAN_ENDPOINT: $(AzFuncScanEndpoint)
       LABEL_ENDPOINT: $(AzFuncSetLabelOnPullRequestEndpoint)
       CLEANUP_ENDPOINT: $(AzFuncCleanupEndpoint)
+      LABEL_KEY: $(AzureFunctionLabelKey)
 
   # Validates integrity of pull request.
   - task: CmdLine@2
@@ -61,7 +62,7 @@ jobs:
     env:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
-  
+
   # USED FOR DEBUGGING REMOVE.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
@@ -132,6 +133,7 @@ jobs:
   condition: succeededOrFailed()
   variables:
     HostKeySecret: $[ dependencies.FileValidation.outputs['wingetsetup.hostkey']]
+    LabelKeySecret : $[ dependencies.FileValidation.outputs['wingetsetup.labelkey']]
     LabelEndpointSecret: $[ dependencies.FileValidation.outputs['wingetsetup.labelEndpoint']]
     RepositoryId: $[ dependencies.FileValidation.outputs['wingetsetup.repoId']]
     CleanupEndpointSecret: $[ dependencies.filevalidation.outputs['wingetsetup.cleanupEndpoint']]
@@ -143,7 +145,7 @@ jobs:
     condition: eq(variables['WinGet.RepositoryType'], 'GitHub')
     inputs:
       function: '$(LabelEndpointSecret)'
-      key: '$(HostKeySecret)'
+      key: '$(LabelKeySecret)'
       body: |
         {
         "operationId": "$(Build.BuildNumber)",
@@ -159,3 +161,23 @@ jobs:
         "PullRequestNumber": "$(System.PullRequest.PullRequestNumber)",
         }
       waitForCompletion: "true"
+      
+  # Cleanup resources.
+  #- task: AzureFunction@1
+  #  displayName: 'Validation cleanup'
+  #  inputs:
+  #    function: '$(CleanupEndpointSecret)'
+  #    key: '$(HostKeySecret)'
+  #    body: |
+  #      {
+  #      "operationId": "$(Build.BuildNumber)",
+  #      "PlanUrl": "$(system.CollectionUri)",
+  #      "HubName": "$(system.HostType)",
+  #      "ProjectId": "$(system.TeamProjectId)",
+  #      "PlanId": "$(system.PlanId)", 
+  #      "JobId": "$(system.JobId)", 
+  #      "TimelineId": "$(system.TimelineId)", 
+  #      "TaskInstanceId": "$(system.TaskInstanceId)",
+  #      "AuthToken": "$(system.AccessToken)"
+  #      }
+  #    waitForCompletion: "true"
