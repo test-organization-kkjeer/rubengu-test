@@ -9,6 +9,6 @@ InstallerType: Exe
 Installers:
   - Arch: x64
     Url: https://release.gitkraken.com/win64/GitKrakenSetup.exe
-    Sha256: 289CE5D60E692DBA8D187F34040D78CA94FD1FA4BE303CAE87995993B1B25C92
+    Sha256: 6D7ECBA2BD408CF1C3430F2CAA420E0FF7B7D0D1867D6CF921A48B003BB1B510
     Switches:
       Silent: -s
