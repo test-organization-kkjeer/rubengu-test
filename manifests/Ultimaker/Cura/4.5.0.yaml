@@ -1,0 +1,14 @@
+Id: Ultimaker.Cura
+Name: Cura
+Version: 4.5.0
+Publisher: Ultimaker
+Homepage: https://ultimaker.com/
+License: LGPL-3.0
+Description: Open source 3D printer slicing application.
+InstallerType: Exe
+Installers:
+  - Arch: x64
+    Url: https://github.com/Ultimaker/Cura/releases/download/4.5.0/Ultimaker.Cura-4.5.0-win64.exe
+    Sha256: FF9AFB3B969524F9DA472BE91EDA137EC0C0BC5F59D30183FD8F260BF6FBF0D8
+    Switches:
+      Silent: /s
