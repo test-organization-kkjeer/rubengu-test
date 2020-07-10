@@ -2,8 +2,10 @@ Id: Git.Git
 Name: Git
 Version: 2.25.1
 Publisher: Git
+AppMoniker: git
+License: GNU General Public License, version 2
+LicenseUrl: https://github.com/git-for-windows/git/blob/master/COPYING
 Homepage: https://git-scm.com/
-License: LGPL-3.0
 Description: Git version control system.
 InstallerType: Inno
 Installers:
