@@ -126,6 +126,10 @@ jobs:
       AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
       CacheConnectionString: $(CacheStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
+      AzureServicesAuthConnectionString: $(AzureServicesAuthConnectionString)
+      WinGetSubscriptionId: $(WinGetSubscriptionId)
+      CdnProfileName: $(CdnProfileName)
+      CdnEndpointName: $(CdnEndpointName)
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
