@@ -1,6 +1,7 @@
 Id: Microsoft.AzureStorageEmulator
 Name: Azure Storage Emulator
 Version: 5.10.19227.2113
+Description: Test
 Publisher: Microsoft
 License: Microsoft
 LicenseUrl: https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx
