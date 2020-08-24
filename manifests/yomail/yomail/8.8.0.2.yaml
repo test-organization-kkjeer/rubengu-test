@@ -4,7 +4,7 @@ Name: yomail
 Publisher: yomail
 License: copyright (c) yomail
 Tags: email,mail
-Description: An IM-like email client
+Description: An IM-like email client si
 Installers:
   - Arch: x86
     Url: https://sm.myapp.com/original/Office/YoMailSetup-8.8.0.2.exe
