@@ -49,7 +49,7 @@ jobs:
       failOnStderr: true
     condition: succeeded()
     env:
-      AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
+      ValidationConnectionString: $(ValidationStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
   # Validates manifest integrity.
@@ -60,10 +60,9 @@ jobs:
       failOnStderr: true
     condition: succeeded()
     env:
-      AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
+      ValidationConnectionString: $(ValidationStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
-  # USED FOR DEBUGGING REMOVE.
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifacts: Logs'
     inputs:
@@ -161,23 +160,23 @@ jobs:
         "PullRequestNumber": "$(System.PullRequest.PullRequestNumber)",
         }
       waitForCompletion: "true"
-      
+
   # Cleanup resources.
-  #- task: AzureFunction@1
-  #  displayName: 'Validation cleanup'
-  #  inputs:
-  #    function: '$(CleanupEndpointSecret)'
-  #    key: '$(HostKeySecret)'
-  #    body: |
-  #      {
-  #      "operationId": "$(Build.BuildNumber)",
-  #      "PlanUrl": "$(system.CollectionUri)",
-  #      "HubName": "$(system.HostType)",
-  #      "ProjectId": "$(system.TeamProjectId)",
-  #      "PlanId": "$(system.PlanId)", 
-  #      "JobId": "$(system.JobId)", 
-  #      "TimelineId": "$(system.TimelineId)", 
-  #      "TaskInstanceId": "$(system.TaskInstanceId)",
-  #      "AuthToken": "$(system.AccessToken)"
-  #      }
-  #    waitForCompletion: "true"
+#  - task: AzureFunction@1
+#    displayName: 'Validation cleanup'
+#    inputs:
+#      function: '$(CleanupEndpointSecret)'
+#      key: '$(HostKeySecret)'
+#      body: |
+#        {
+#        "operationId": "$(Build.BuildNumber)",
+#        "PlanUrl": "$(system.CollectionUri)",
+#        "HubName": "$(system.HostType)",
+#        "ProjectId": "$(system.TeamProjectId)",
+#        "PlanId": "$(system.PlanId)", 
+#        "JobId": "$(system.JobId)", 
+#        "TimelineId": "$(system.TimelineId)", 
+#        "TaskInstanceId": "$(system.TaskInstanceId)",
+#        "AuthToken": "$(system.AccessToken)"
+#        }
+#      waitForCompletion: "true"

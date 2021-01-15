@@ -51,7 +51,7 @@ jobs:
       failOnStderr: true
     condition: succeeded()
     env:
-      AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
+      ValidationConnectionString: $(ValidationStorageAccountConnectionString)
       CacheConnectionString: $(CacheStorageAccountConnectionString)
       PackagePublisher: $(PackagePublisher)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
@@ -125,7 +125,7 @@ jobs:
       failOnStderr: true
     condition: succeeded()
     env:
-      AzureWebJobsStorage: $(ValidationStorageAccountConnectionString)
+      ValidationConnectionString: $(ValidationStorageAccountConnectionString)
       CacheConnectionString: $(CacheStorageAccountConnectionString)
       DIApplicationInsightKey: $(DIApplicationInsightKey)
 
