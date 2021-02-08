@@ -2,6 +2,7 @@ Id: IntegrationTests.ManifestUpdate
 Version: 1.0
 Name: ManifestUpdate Test
 Publisher: Contoso
+Description: Test
 License: Text
 Installers: 
     - Arch: x64
