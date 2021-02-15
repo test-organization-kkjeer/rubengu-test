@@ -52,16 +52,15 @@ PackageFamilyName: Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 ProductCode: "{Foo}"
 
 Installers:
-  - Architecture: x86
+  - Architecture: x64
     Channel: preview
     InstallerLocale: en-GB
     Platform:
       - Windows.Desktop
     MinimumOSVersion: 10.0.1.0
-    InstallerType: msix
-    InstallerUrl: https://www.microsoft.com/msixsdk/msixsdkx86.msix
-    InstallerSha256: 69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82
-    SignatureSha256: 69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82
+    InstallerType: msi
+    InstallerUrl: https://github.com/microsoft/msix-packaging/releases/download/MSIX-Core-1.1-release/msixmgrSetup-1.1.0.0-x64.msi
+    InstallerSha256: a4d23b49269a7cb1e09fbfb1d532c7b1eacb9acba5e2c6172b6206e885296052
     Scope: user
     InstallModes:
       - user
@@ -99,11 +98,6 @@ Installers:
       - internetClientPreview
     RestrictedCapabilities:
       - runFullTrustPreview
-  - Architecture: x64
-    InstallerType: exe
-    InstallerUrl: https://www.microsoft.com/msixsdk/msixsdkx64.exe
-    InstallerSha256: 69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82
-    ProductCode: "{Bar}"
 
 ManifestType: installer
 ManifestVersion: 1.0.0

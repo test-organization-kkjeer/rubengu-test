@@ -7,11 +7,11 @@ PublisherSupportUrl: https://www.microsoft.com/support
 PrivacyUrl: https://www.microsoft.com/privacy
 Author: Microsoft
 PackageName: MSIX SDK
-PackageUrl: https://www.microsoft.com/msixsdk/home
+PackageUrl: https://github.com/Microsoft/msix-packaging
 License: MIT License
-LicenseUrl: https://www.microsoft.com/msixsdk/license
+LicenseUrl: https://github.com/Microsoft/msix-packaging
 Copyright: Copyright Microsoft Corporation
-CopyrightUrl: https://www.microsoft.com/msixsdk/copyright
+CopyrightUrl: https://github.com/Microsoft/msix-packaging
 ShortDescription: This is MSIX SDK
 Description: The MSIX SDK project is an effort to enable developers
 Moniker: msixsdk
