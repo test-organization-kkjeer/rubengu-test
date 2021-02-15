@@ -93,11 +93,6 @@ Installers:
         - PackageIdentifier: Microsoft.MsixSdkDepPreview
       ExternalDependencies:
         - Preview Outside dependencies
-    PackageFamilyName: Microsoft.DesktopAppInstallerPreview_8wekyb3d8bbwe
-    Capabilities:
-      - internetClientPreview
-    RestrictedCapabilities:
-      - runFullTrustPreview
 
 ManifestType: installer
 ManifestVersion: 1.0.0
