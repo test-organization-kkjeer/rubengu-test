@@ -1,0 +1,23 @@
+PackageIdentifier: microsoft.msixsdk
+PackageVersion: 1.7.32
+PackageLocale: en-US
+Publisher: Microsoft
+PublisherUrl: https://www.microsoft.com
+PublisherSupportUrl: https://www.microsoft.com/support
+PrivacyUrl: https://www.microsoft.com/privacy
+Author: Microsoft
+PackageName: MSIX SDK
+PackageUrl: https://github.com/Microsoft/msix-packaging
+License: MIT License
+LicenseUrl: https://github.com/Microsoft/msix-packaging
+Copyright: Copyright Microsoft Corporation
+CopyrightUrl: https://github.com/Microsoft/msix-packaging
+ShortDescription: This is MSIX SDK
+Description: The MSIX SDK project is an effort to enable developers
+Moniker: msixsdk
+Tags:
+  - "appxsdk"
+  - "msixsdk"
+
+ManifestType: defaultLocale
+ManifestVersion: 1.0.0
