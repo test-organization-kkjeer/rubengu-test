@@ -1,7 +1,7 @@
-PackageIdentifier: 7zip.7zip
-PackageName: 7Zip
-Moniker: 7zip
-PackageVersion: 16.0.4
+PackageIdentifier: 7zip.7zipAlpha
+PackageName: 7Zip - Alpha
+Moniker: 7zip-alpha
+PackageVersion: 20.0.2-alpha
 Publisher: 7zip
 Author: 7zip
 License: Copyright (C) 1999-2020 Igor Pavlov. - GNU LGPL
@@ -17,14 +17,14 @@ Tags:
   - utility
   - tool
   - zip
-InstallerType: msi
-Installers:
-  - Architecture: x64
-    InstallerUrl: https://www.7-zip.org/a/7z1604-x64.msi
-    InstallerSha256: B3885B2F090F1E9B5CF2B9F802B07FE88E472D70D60732DB9F830209AC296067
+InstallerType: exe
+Installers: 
+  - Architecture: x64 
+    InstallerUrl: https://7-zip.org/a/7z2002-x64.exe
+    InstallerSha256: 356E128FCE6625F5BBE03D4B8B6DFCD744EE4482A16E9E495EE44AD77C2435E5
     InstallerSwitches:
-      Silent: /quiet /norestart
-      SilentWithProgress: /passive /norestart
+      Silent: /S
+      SilentWithProgress: /S
 
 ManifestType: singleton
 ManifestVersion: 1.0.0

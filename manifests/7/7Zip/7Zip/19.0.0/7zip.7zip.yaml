@@ -9,6 +9,7 @@ LicenseUrl: https://7-zip.org/license.txt
 MinimumOSVersion: 10.0.0.0
 PackageUrl: https://www.7-zip.org/
 ShortDescription: Free and open source file archiver with a high compression ratio.
+PackageLocale: en-US
 Tags: 
   - 7zip
   - compression
@@ -24,3 +25,6 @@ Installers:
     InstallerSwitches:
       Silent: /quiet /norestart
       SilentWithProgress: /passive /norestart
+
+ManifestType: singleton
+ManifestVersion: 1.0.0
