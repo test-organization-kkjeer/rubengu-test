@@ -1,0 +1,9 @@
+PackageIdentifier: V1Test.Multifile
+PackageName: MultifileFR
+PackageVersion: 19.0.0
+Publisher: V1testFR
+ShortDescription: Free and open source file archiver with a high compression ratio. FRFR
+PackageLocale: fr-FR
+
+ManifestType: locale
+ManifestVersion: 1.0.0
