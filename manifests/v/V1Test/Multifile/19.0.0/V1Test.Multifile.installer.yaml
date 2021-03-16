@@ -1,0 +1,14 @@
+PackageIdentifier: V1Test.Multifile
+PackageVersion: 19.0.0
+MinimumOSVersion: 10.0.0.0
+InstallerType: msi
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://www.7-zip.org/a/7z1900-x64.msi
+    InstallerSha256: A7803233EEDB6A4B59B3024CCF9292A6FFFB94507DC998AA67C5B745D197A5DC
+    InstallerSwitches:
+      Silent: /quiet /norestart
+      SilentWithProgress: /passive /norestart
+
+ManifestType: installer
+ManifestVersion: 1.0.0
