@@ -1,7 +1,7 @@
 PackageIdentifier: V1Test.Singleton
 PackageName: Singleton
 Moniker: Singleton
-PackageVersion: 19.0.0
+PackageVersion: 18.0.0
 Publisher: V1Test
 Author: 7zip
 License: Copyright (C) 1999-2020 Igor Pavlov. - GNU LGPL

@@ -1,5 +1,5 @@
 PackageIdentifier: V1Test.Multifile
-PackageVersion: 19.0.0
+PackageVersion: 18.0.0
 MinimumOSVersion: 10.0.0.0
 InstallerType: msi
 Installers:
