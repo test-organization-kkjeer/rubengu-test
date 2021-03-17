@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Mar/17
 PackageIdentifier: V1Test.Multifile
 PackageName: Multifile
 Moniker: TestMultifile
-PackageVersion: 16.0.4
+PackageVersion: 19.00.00.0
 Publisher: V1Test
 Author: Test
 License: Copyright (C) 1999-2020 Igor Pavlov. - GNU LGPL
@@ -9,13 +10,12 @@ LicenseUrl: https://7-zip.org/license.txt
 PackageUrl: https://www.7-zip.org/
 ShortDescription: Free and open source file archiver with a high compression ratio.
 PackageLocale: en-US
-Tags: 
-  - 7zip
-  - compression
-  - file compression
-  - utility
-  - tool
-  - zip
-
+Tags:
+- 7zip
+- compression
+- file compression
+- utility
+- tool
+- zip
 ManifestType: defaultLocale
 ManifestVersion: 1.0.0
