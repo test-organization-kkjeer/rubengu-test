@@ -1,0 +1,16 @@
+Id: 7zip.7zip
+Name: 7Zip
+AppMoniker: 7zip
+Version: 19.0.0
+Publisher: 7zip
+Author: 7zip
+License: MIT License
+LicenseUrl: https://github.com/microsoft/msix-packaging/blob/master/LICENSE
+MinOSVersion: 10.0.0.0
+Homepage: https://www.7-zip.org/
+Tags: "7zip,compression,file compression,utility,tool,zip"
+InstallerType: msi
+Installers: 
+  - Arch: x64 
+    Url: https://www.7-zip.org/a/7z1900-x64.msi
+    Sha256: 09eebc165474969deea115a3cb6a3b88ca206e2c65975e76e6b7d891d1d6e648
