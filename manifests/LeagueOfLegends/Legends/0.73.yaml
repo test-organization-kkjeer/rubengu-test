@@ -1,0 +1,12 @@
+Id: LeagueOfLegends.Legends
+Version: 0.73
+Name: LeagueOfLegends
+Publisher: LOL
+Homepage: https://play.euw.leagueoflegends.com/
+License: (c) Legends HQ Pty Limited.
+Description: Legends is a arcade game.
+Installers: 
+    - Arch: x86
+      Url: https://play.euw.leagueoflegends.exe
+      InstallerType: Inno
+      Sha256: 72350BE01792FEABF1C13F66DCA8FE57C65EE16DE90A2345D135A38C8A8A670B
