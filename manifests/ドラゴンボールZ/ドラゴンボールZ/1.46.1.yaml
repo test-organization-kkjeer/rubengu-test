@@ -1,0 +1,14 @@
+Id: ドラゴンボールZ.ドラゴンボールZ
+Version: 1.46.1
+Name: Visual Studio Code
+Publisher: Microsoft Corporation
+Homepage: https://code.visualstudio.com
+License: Copyright (c) Microsoft Corporation
+Description: Test for international characters in the id and path.
+AppMoniker: vscode
+Commands: code
+Installers: 
+    - Arch: x64
+      Url: https://stpkgmanvalwestustest.blob.core.windows.net/test-installers/VSCodeUserSetup-x64-1.46.1.exe
+      InstallerType: inno
+      Sha256: e29f73f5b6bad9ea5a484d9a934141a03d3fa39c55efd6e65e6e02dea6be9aa5
