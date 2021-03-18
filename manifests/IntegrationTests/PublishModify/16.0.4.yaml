@@ -6,7 +6,7 @@ Author: 7zip
 License: Copyright (C) 1999-2020 Igor Pavlov. - GNU LGPL
 LicenseUrl: https://7-zip.org/license.txt
 Homepage: https://www.7-zip.org/
-Description: Free and open source file archiver with a high compression ratio.
+Description: Modified Description
 InstallerType: msi
 Installers:
   - Arch: x64
