@@ -1,0 +1,19 @@
+﻿PackageIdentifier: Julialang.Julia
+Publisher: Julialang
+PackageName: Julia
+PackageVersion: 1.5.3
+License: MIT
+LicenseUrl: https://github.com/JuliaLang/julia/blob/master/LICENSE.md
+Moniker: julia
+ShortDescription: Julia is a high-level, high-performance, dynamic programming language
+PackageUrl: https://julialang.org/
+Commands:
+- julia
+Installers:
+- Architecture: x64
+  InstallerType: inno
+  InstallerUrl: https://julialang-s3.julialang.org/bin/winnt/x64/1.5/julia-1.5.3-win64.exe
+  InstallerSha256: 5c5c5f8794747072296d33d6547977a61126c6283b449814fb6e8005fb282a59
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

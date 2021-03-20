@@ -1,0 +1,17 @@
+﻿PackageIdentifier: SFLinux.Jami
+PackageVersion: 202102261708
+PackageName: Jami
+Publisher: SFLinux
+License: GPL3
+LicenseUrl: https://git.jami.net/savoirfairelinux/ring-project/raw/master/COPYING
+Moniker: jami
+ShortDescription: A free and universal communication platform which preserves the user's privacy and freedoms.
+PackageUrl: https://jami.net/
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.jami.net/windows/archive/jami_x86_64-202102261708.msi
+  InstallerSha256: 325bfaf7ecfb9ea42d239e38b62dd17727dad3d29ec41d85bd008106289337cf
+  InstallerType: msi
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

@@ -1,0 +1,24 @@
+﻿PackageIdentifier: KDE.kstars
+Publisher: KDE
+PackageName: kstars
+Author: KDE
+ShortDescription: KDE.kstars
+Description: KStars is free, open source, cross-platform Astronomy Software. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. The display includes up to 100 million stars, 13,000 deep-sky objects,all 8 planets, the Sun and Moon, and thousands of comets, asteroids, supernovae, and satellites.
+Tags:
+- star
+- astronomy
+- planetarium
+- edu
+- education
+- kde
+PackageUrl: https://edu.kde.org/kstars/
+License: GPL
+PackageVersion: 3.5.1
+InstallerType: nullsoft
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.indilib.org/jdownloads/kstars/kstars-3.5.1.exe
+  InstallerSha256: 228afb25cc5e642db7abf7064bcea837cd0f9120cff0060c38c713552cf65d5f
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

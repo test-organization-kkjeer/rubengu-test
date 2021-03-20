@@ -1,0 +1,20 @@
+﻿PackageIdentifier: Maximus5.ConEmu
+Publisher: Maximus5
+PackageName: ConEmu
+PackageVersion: 21.03.04
+License: BSD 3-Clause
+LicenseUrl: https://raw.githubusercontent.com/Maximus5/ConEmu/v21.03.04/LICENSE
+Moniker: conemu
+ShortDescription: ConEmu-Maximus5 aims to be handy, comprehensive, fast and reliable terminal window where you may host any console application developed either for WinAPI (cmd, powershell, far) or Unix PTY (cygwin, msys, wsl bash).
+PackageUrl: https://conemu.github.io/en/
+InstallerType: exe
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Maximus5/ConEmu/releases/download/v21.03.04/ConEmuSetup.210304.exe
+  InstallerSha256: 135276771733cfa4a4fa19d5b5125d18ca4bfae1785c9351ca3d82df6ffcd331
+  InstallerSwitches:
+    Silent: /p:x64 /quiet /norestart
+    SilentWithProgress: /p:x64 /passive /norestart
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

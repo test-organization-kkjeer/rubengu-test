@@ -1,0 +1,21 @@
+﻿PackageIdentifier: Microsoft.azure-iot-explorer
+Publisher: Microsoft
+PackageName: azure-iot-explorer
+PackageVersion: 0.13.6
+ShortDescription: Cross-platform UI for interacting with devices attached to Azure IoT Hub
+License: MIT
+Tags:
+- iot
+- internet of things
+- azure
+- cloud
+LicenseUrl: https://github.com/Azure/azure-iot-explorer/blob/master/LICENSE
+PackageUrl: https://github.com/Azure/azure-iot-explorer
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Azure/azure-iot-explorer/releases/download/v0.13.6/Azure.IoT.Explorer.preview.0.13.6.msi
+  InstallerSha256: 873a59f9f78e07d20e579521ea8bff8aad0103427e6db8ddfdf8566f8236ef02
+  InstallerType: msi
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

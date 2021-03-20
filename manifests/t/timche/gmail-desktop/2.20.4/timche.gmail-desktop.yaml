@@ -1,0 +1,23 @@
+﻿PackageIdentifier: timche.gmail-desktop
+Publisher: timche
+PackageName: gmail-desktop
+Author: timche
+ShortDescription: Nifty Gmail desktop app
+Tags:
+- electron
+- mail
+- email
+- google
+- gmail
+PackageUrl: https://github.com/timche/gmail-desktop
+License: MIT
+LicenseUrl: https://github.com/timche/gmail-desktop/blob/master/LICENSE
+PackageVersion: 2.20.4
+InstallerType: nullsoft
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/timche/gmail-desktop/releases/download/v2.20.4/gmail-desktop-2.20.4-win.exe
+  InstallerSha256: 2f590b9a83ed421011dac56d7b21efa0e2b67654e33bbeba0c4123f9b81dc5df
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

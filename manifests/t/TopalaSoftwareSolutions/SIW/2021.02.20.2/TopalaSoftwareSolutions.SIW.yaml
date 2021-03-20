@@ -1,0 +1,21 @@
+﻿PackageIdentifier: TopalaSoftwareSolutions.SIW
+Publisher: Topala Software Solutions
+PackageName: System Information for Windows
+Moniker: siw
+MinimumOSVersion: 6.1.0.0
+PackageVersion: 2021.02.20.2
+ShortDescription: System Information for Windows - Everything you want to know about your computer
+License: Commercial
+LicenseUrl: https://www.gtopala.com/agreement/
+PackageUrl: https://www.gtopala.com/
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://siw64.com/download/siwtrial-setup.exe
+  InstallerSha256: 91D1A5A3ADF465AE86DC8A2926172A1F95B345E230D4BA740526158093EFE918
+  InstallerType: inno
+  InstallerSwitches:
+    Silent: /VERYSILENT
+    SilentWithProgress: /VERYSILENT
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

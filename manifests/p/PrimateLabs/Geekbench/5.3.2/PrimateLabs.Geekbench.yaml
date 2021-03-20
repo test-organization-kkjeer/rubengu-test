@@ -1,0 +1,22 @@
+﻿PackageIdentifier: PrimateLabs.Geekbench
+PackageVersion: 5.3.2
+PackageName: Geekbench
+Publisher: Primate Labs
+License: © 2004-2019 Primate Labs Inc.
+Moniker: geekbench
+Tags:
+- benchmark
+- geekbench
+ShortDescription: Cross-Platform Benchmark
+PackageUrl: https://www.geekbench.com/
+Installers:
+- Architecture: x64
+  InstallerUrl: https://cdn.geekbench.com/Geekbench-5.3.2-WindowsSetup.exe
+  InstallerSha256: 774BAC8DBE49A9961B39B9540123E71D74C528028AFA74F71CF532C3221AA307
+  InstallerType: exe
+  InstallerSwitches:
+    Silent: "/S"
+    SilentWithProgress: "/S"
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

@@ -1,0 +1,25 @@
+﻿PackageIdentifier: beekeeper-studio.beekeeper-studio
+Publisher: beekeeper-studio
+PackageName: beekeeper-studio
+Author: beekeeper-studio
+ShortDescription: Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more.
+Tags:
+- electron
+- sql
+- mysql
+- postgres
+- sqlite
+- sql server
+- vue
+PackageUrl: https://github.com/beekeeper-studio/beekeeper-studio
+License: MIT
+LicenseUrl: https://github.com/beekeeper-studio/beekeeper-studio/blob/master/LICENSE.md
+PackageVersion: 1.9.4
+InstallerType: nullsoft
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v1.9.4/Beekeeper-Studio-Setup-1.9.4.exe
+  InstallerSha256: 19851bae7a3e1995e69b1b501cc4e719dfbd81eb1b6847f20910000712ba9748
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

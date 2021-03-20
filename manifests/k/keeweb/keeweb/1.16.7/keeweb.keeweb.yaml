@@ -1,0 +1,22 @@
+﻿PackageIdentifier: keeweb.keeweb
+PackageName: keeweb
+Publisher: keeweb
+Author: keeweb
+ShortDescription: Free cross-platform password manager compatible with KeePass.
+Tags:
+- electron
+- keepass
+- password
+- mamager
+PackageUrl: https://keeweb.info/
+License: GPL3
+LicenseUrl: https://github.com/keeweb/keeweb/blob/master/LICENSE
+PackageVersion: 1.16.7
+InstallerType: nullsoft
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/keeweb/keeweb/releases/download/v1.16.7/KeeWeb-1.16.7.win.x64.exe
+  InstallerSha256: 821b725012815ec8a6e7461a1a902ec9498b58db7acb36ed1122330063832b88
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

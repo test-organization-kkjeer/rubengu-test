@@ -1,0 +1,25 @@
+﻿PackageIdentifier: Nutstore.Nutstore
+Publisher: Nutstore
+PackageName: Nutstore
+PackageVersion: latest
+License: © 2020 Shanghai YiCun Network Tech Co., Ltd.
+InstallerType: exe
+Moniker: 坚果云
+Tags:
+- cloud
+- storage
+- cloudstorage
+- jianguoyun
+- jgy
+ShortDescription: Share your files anytime, anywhere, with any device
+PackageUrl: https://www.jianguoyun.com/
+Installers:
+- Architecture: x64
+  InstallerUrl: https://www.jianguoyun.com/static/exe/installer/NutstoreWindowsWPFInstaller.exe
+  InstallerSha256: a5ddecf3e5786d78b7808a5f15b32870438876958883e8bde854cd11735475f6
+  InstallerSwitches:
+    Silent: /exenoui
+    SilentWithProgress: /exenoui
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

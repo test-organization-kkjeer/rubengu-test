@@ -1,0 +1,18 @@
+﻿PackageIdentifier: StandardNotes.StandardNotes
+PackageVersion: 3.6.1
+PackageName: StandardNotes
+Publisher: StandardNotes
+License: AGPLv3
+Moniker: standardnotes
+Tags:
+- notes
+ShortDescription: A free, open-source, and completely encrypted notes app.
+PackageUrl: https://standardnotes.org/
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://github.com/standardnotes/desktop/releases/download/v3.6.1/standard-notes-3.6.1-win.exe
+  InstallerSha256: 1ee1e281c850d177617d80a81633e740d987b7c75c047757a7e6637d7f3560f1
+  InstallerType: nullsoft
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

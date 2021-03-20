@@ -1,0 +1,27 @@
+﻿PackageIdentifier: Google.BackupAndSync
+Publisher: Google
+PackageName: Google Backup And Sync
+Author: Google
+ShortDescription: Easy and secure access to all of your content. Store, share, and collaborate on files and folders from any mobile device, tablet, or computer
+Moniker: google-backup-and-sync
+Tags:
+- cloud
+- backup
+- sync
+- drive
+- photos
+PackageUrl: https://www.google.com/drive/
+License: Copyright 2018 Google LLC
+LicenseUrl: https://www.google.com/drive/terms-of-service/
+MinimumOSVersion: 10.0.0.0
+PackageVersion: latest
+InstallerType: msi
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.google.com/drive/gsync_enterprise64.msi
+  InstallerSha256: 53b6b61b3250c5fb1df5dcae0e7de0b82faefa0cf09ee4b9e87ecad59a71ece3
+  Scope: machine
+  InstallerLocale: en-US
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

@@ -1,0 +1,23 @@
+﻿PackageIdentifier: OSGeo.QGIS_LTR
+Publisher: Open Source Geospatial Foundation (OSGeo)
+PackageName: QGIS LTR
+PackageVersion: 3.16.4
+Moniker: qgis
+MinimumOSVersion: 10.0.0.0
+ShortDescription: Open Source Geographic Information System (GIS)
+PackageUrl: https://qgis.org
+InstallerSwitches:
+  Silent: /S
+  SilentWithProgress: /S
+Tags:
+- gis
+License: GNU General Public License GPLv2
+LicenseUrl: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+InstallerType: exe
+Installers:
+- Architecture: x64
+  InstallerUrl: https://qgis.org/downloads/QGIS-OSGeo4W-3.16.4-1-Setup-x86_64.exe
+  InstallerSha256: 65f18c6e4a6cfd691cae3f84f1651c5a215f3546d2b2d404ceead92e6f938d07
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

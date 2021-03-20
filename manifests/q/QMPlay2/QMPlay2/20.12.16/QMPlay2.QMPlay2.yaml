@@ -1,0 +1,27 @@
+﻿PackageIdentifier: QMPlay2.QMPlay2
+PackageVersion: 20.12.16
+PackageName: QMPlay2
+Publisher: QMPlay2
+License: GNU Lesser General Public License v3.0
+LicenseUrl: https://raw.githubusercontent.com/zaps166/QMPlay2/master/LICENSE
+Moniker: qmplay2
+Tags:
+- qmplay2
+- videoplayer
+- mediaplayer
+- youtube
+- prostopleer
+- freeware
+ShortDescription: QMPlay2 is a video and audio player. It can play all formats supported by FFmpeg, libmodplug (including J2B and SFX). It also supports Audio CD, raw files, Rayman 2 music and chiptunes. It contains YouTube and Prostopleer browser.
+PackageUrl: https://github.com/zaps166/QMPlay2
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/zaps166/QMPlay2/releases/download/20.12.16/QMPlay2-Win64-20.12.16.exe
+  InstallerSha256: ed98a8e75eca91a1e87ce0594baabeda2afcfe1881362991e62ac9a68addb9e6
+  InstallerType: exe
+  InstallerSwitches:
+    Silent: --Auto
+    SilentWithProgress: --Auto
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

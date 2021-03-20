@@ -1,0 +1,17 @@
+﻿PackageIdentifier: Kitware.CMake
+PackageVersion: 3.20.0-rc3
+PackageName: CMake
+Publisher: Kitware
+PackageUrl: https://github.com/Kitware/CMake
+License: Copyright 2000-2020 Kitware, Inc. and Contributors
+ShortDescription: CMake is a cross-platform, open-source build system generator.
+Moniker: cmake
+LicenseUrl: https://raw.githubusercontent.com/Kitware/CMake/v3.20.0-rc3/Copyright.txt
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Kitware/CMake/releases/download/v3.20.0-rc3/cmake-3.20.0-rc3-windows-x86_64.msi
+  InstallerSha256: f56924a12240d794fd9254a54a297fb6616aae984206dd5a9ad4506113492ac8
+  InstallerType: msi
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

@@ -1,0 +1,19 @@
+﻿PackageIdentifier: Tailscale.Tailscale
+Publisher: Tailscale
+PackageName: Tailscale
+PackageVersion: 1.4.6
+License: Commercial
+Tags:
+- VPN
+- Mesh
+- wireguard
+ShortDescription: Tailscale a WireGuard based mesh VPN, used to connect your computers and other devices together securely without proxies.
+Moniker: tailscale
+Installers:
+- Architecture: x64
+  InstallerType: nullsoft
+  InstallerUrl: https://pkgs.tailscale.com/stable/tailscale-ipn-setup-1.4.6.exe
+  InstallerSha256: 2d611b4e1a5b7f9e8633de7b86dc2f4d3243125d82d6492dcd5a08868a54077c
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0

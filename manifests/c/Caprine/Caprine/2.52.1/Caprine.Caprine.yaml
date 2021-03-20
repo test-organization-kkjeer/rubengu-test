@@ -1,0 +1,20 @@
+﻿PackageIdentifier: Caprine.Caprine
+PackageVersion: 2.52.1
+PackageName: Caprine
+Publisher: Caprine
+License: Copyright (c) Sindre Sorhus - MIT License
+LicenseUrl: https://github.com/sindresorhus/caprine/blob/master/license
+Tags:
+- facebook
+- messenger
+- chat
+ShortDescription: Caprine is an elegant Facebook Messenger desktop app
+PackageUrl: https://sindresorhus.com/caprine/
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/sindresorhus/caprine/releases/download/v2.52.1/Caprine-Setup-2.52.1.exe
+  InstallerSha256: C6AF4E3243DB63E460368F2B525A12C92EFA237EE410B100DC0226C4186AA556
+  InstallerType: nullsoft
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
