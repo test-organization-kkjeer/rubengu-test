@@ -4,8 +4,8 @@ MinimumOSVersion: 10.0.0.0
 InstallerType: msi
 Installers:
   - Architecture: x64
-    InstallerUrl: https://www.7-zip.org/a/7z1604-x64.msi
-    InstallerSha256: B3885B2F090F1E9B5CF2B9F802B07FE88E472D70D60732DB9F830209AC296067
+    InstallerUrl: https://www.7-zip.org/a/7z1900-x64.msi
+    InstallerSha256: A7803233EEDB6A4B59B3024CCF9292A6FFFB94507DC998AA67C5B745D197A5DC
     InstallerSwitches:
       Silent: /quiet /norestart
       SilentWithProgress: /passive /norestart
