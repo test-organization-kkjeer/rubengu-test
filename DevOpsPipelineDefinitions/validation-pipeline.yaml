@@ -93,6 +93,7 @@ jobs:
       body: |
         {
         "operationId": "$(Build.BuildNumber)",
+        "BuildId": "$(Build.BuildId)",
         "PlanUrl": "$(system.CollectionUri)",
         "HubName": "$(system.HostType)",
         "ProjectId": "$(system.TeamProjectId)",
@@ -113,6 +114,7 @@ jobs:
       body: |
         {
         "operationId": "$(Build.BuildNumber)",
+        "BuildId": "$(Build.BuildId)",
         "PlanUrl": "$(system.CollectionUri)",
         "HubName": "$(system.HostType)",
         "ProjectId": "$(system.TeamProjectId)",
@@ -150,6 +152,7 @@ jobs:
       body: |
         {
         "operationId": "$(Build.BuildNumber)",
+        "BuildId": "$(Build.BuildId)",
         "PlanUrl": "$(system.CollectionUri)",
         "HubName": "$(system.HostType)",
         "ProjectId": "$(system.TeamProjectId)",
@@ -172,6 +175,7 @@ jobs:
 #      body: |
 #        {
 #        "operationId": "$(Build.BuildNumber)",
+#        "BuildId": "$(Build.BuildId)",
 #        "PlanUrl": "$(system.CollectionUri)",
 #        "HubName": "$(system.HostType)",
 #        "ProjectId": "$(system.TeamProjectId)",
