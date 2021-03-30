@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Mar/30
 ﻿PackageIdentifier: Blitz.Blitz
 Publisher: Blitz
 PackageName: Blitz
-PackageVersion: 1.13.140.0
+PackageVersion: 1.13.142.1702
 License: Custom use license
 InstallerType: exe
 LicenseUrl: https://www.blitz.gg/terms-of-service
@@ -17,7 +18,7 @@ Installers:
 - Architecture: x86
   InstallerType: exe
   InstallerUrl: https://blitz.gg/download/win
-  InstallerSha256: A4D02A2718C09D312B37E45AAE721A06BF9FD4AC4E2610B3D1054F83D29AB4FB
+  InstallerSha256: 98E6251988B07E3EC46AF8FC74121B7C2B8A89A6E0C2EB4DFB577D488A63987D
 PackageLocale: en-US
 ManifestType: singleton
 ManifestVersion: 1.0.0
