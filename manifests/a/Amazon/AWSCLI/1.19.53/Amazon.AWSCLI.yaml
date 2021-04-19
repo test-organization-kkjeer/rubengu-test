@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Apr/19
 ﻿PackageIdentifier: Amazon.AWSCLI
 Publisher: AWS
 PackageName: AWS Command Line Interface v1
-PackageVersion: 1.19.27
+PackageVersion: 1.19.53
 License: Copyright 2012-2020 Amazon.com, Inc. or its affiliates. All Rights Reserved. Licensed under the Apache License, Version 2.0
 LicenseUrl: https://github.com/aws/aws-cli/blob/1.18.214/LICENSE.txt
 Author: Amazon Web Services
@@ -16,7 +17,7 @@ InstallerType: msi
 Installers:
 - Architecture: x64
   InstallerUrl: https://s3.amazonaws.com/aws-cli/AWSCLI64PY3.msi
-  InstallerSha256: EB6828EB701891154A705D7A330A023C9608009A152406C5933D695A4A7BA7B7
+  InstallerSha256: 0C85BAF871435B023900D21A690D4BE71F1066DD5746A1C6CAE846FAC9D67EE2
   ProductCode: "{1C96DE4D-A969-4067-8E2C-0473F22800B7}"
   InstallerSwitches:
     Silent: /quiet /norestart
