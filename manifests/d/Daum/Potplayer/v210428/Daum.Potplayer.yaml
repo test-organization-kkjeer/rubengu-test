@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Apr/28
 ﻿PackageIdentifier: Daum.Potplayer
 Publisher: Daum
 PackageName: Potplayer
-PackageVersion: v210318
+PackageVersion: v210428
 License: Freeware
 InstallerType: exe
 LicenseUrl: http://potplayer.daum.net/publicRelation
@@ -24,7 +25,7 @@ Installers:
 - Architecture: x64
   InstallerType: exe
   InstallerUrl: https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe
-  InstallerSha256: D8C1CCF07240E46A1EC2C3228558F4D6CE34B5FBC127CF5EB9C9BDAD2FD7C62B
+  InstallerSha256: 5A34054E021AE96EED3B4C61B0B95D6EB6448414C3B2A909A24589EFDDCB2B88
   InstallerSwitches:
     Silent: /S
     SilentWithProgress: /S
