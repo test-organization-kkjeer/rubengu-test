@@ -1,6 +1,7 @@
+# Automatically updated by the winget bot at 2021/Apr/28
 ﻿PackageIdentifier: Axosoft.GitKraken
 PackageName: GitKraken
-PackageVersion: 7.5.2
+PackageVersion: 7.5.5
 Publisher: Axosoft
 PackageUrl: https://www.gitkraken.com/
 ShortDescription: Git GUI Client.
@@ -10,7 +11,7 @@ InstallerType: exe
 Installers:
 - Architecture: x64
   InstallerUrl: https://release.axocdn.com/win64/GitKrakenSetup.exe
-  InstallerSha256: 372EB2279B85121A448572C6EB3A5647DAE17D31D9BE0673A2422C633CD2435A
+  InstallerSha256: 52592C85F16C49115D6C2BC664AA0CD6BDC7007F1A5061C0ACA945678370A1B2
   InstallerSwitches:
     Silent: /silent
     SilentWithProgress: /silent
