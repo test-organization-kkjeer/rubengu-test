@@ -1,0 +1,33 @@
+﻿PackageIdentifier: Daum.Potplayer
+Publisher: Daum
+PackageName: Potplayer
+PackageVersion: v210318
+License: Freeware
+InstallerType: exe
+LicenseUrl: http://potplayer.daum.net/publicRelation
+Moniker: potplayer
+Tags:
+- media
+- player
+- video
+- freeware
+FileExtensions:
+- MKV
+- OGM
+- MP4
+- MOV
+- 3GP
+- AVI
+ShortDescription: Powerful multimedia player that supports a variety of different video codecs and formats.
+PackageUrl: http://potplayer.daum.net/
+Installers:
+- Architecture: x64
+  InstallerType: exe
+  InstallerUrl: https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe
+  InstallerSha256: D8C1CCF07240E46A1EC2C3228558F4D6CE34B5FBC127CF5EB9C9BDAD2FD7C62B
+  InstallerSwitches:
+    Silent: /S
+    SilentWithProgress: /S
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
