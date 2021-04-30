@@ -1,0 +1,23 @@
+# Automatically updated by the winget bot at 2021/Apr/30
+﻿PackageIdentifier: RiotGames.Valorant
+PackageVersion: 30.0.1.3715678
+PackageName: Valorant
+Publisher: Riot Games
+Tags:
+- Valorant
+- FPS
+- RiotGames
+ShortDescription: A 5v5 character-based tactical shooter
+License: Copyright (c) Riot Games. All rights reserved.
+PackageUrl: https://playvalorant.com
+InstallerType: exe
+Installers:
+- Architecture: x64
+  InstallerUrl: https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.ap.exe
+  InstallerSha256: B32CAA881D35E6E3EA07BE5C6D781421193B496C06999B5C71AA2FCC5501FE75
+  InstallerSwitches:
+    Silent: --mode unattended
+    SilentWithProgress: --mode unattended
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
