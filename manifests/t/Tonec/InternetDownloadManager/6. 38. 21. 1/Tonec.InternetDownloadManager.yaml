@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageName: Internet Download Manager
 Publisher: Tonec Inc.
 PackageIdentifier: Tonec.InternetDownloadManager
-PackageVersion: 6.38.18.1
+PackageVersion: 6. 38. 21. 1
 Moniker: idm
 License: Copyright (c) Tonec Inc.
 Tags:
@@ -12,7 +13,7 @@ PackageUrl: https://www.internetdownloadmanager.com/
 Installers:
 - Architecture: x86
   InstallerUrl: https://download.internetdownloadmanager.com/idman638build17.exe
-  InstallerSha256: 8E2B2F443174710C6F75DCDAF9AB69516F2CB2C7A1824A70F7EA2EB5678ACC28
+  InstallerSha256: D58AF91D4C07915F8812D6F996C9F224A744CC598490F18A143F8EEF30F81D0D
   InstallerSwitches:
     Silent: /skipdlgs
     SilentWithProgress: /skipdlgs
