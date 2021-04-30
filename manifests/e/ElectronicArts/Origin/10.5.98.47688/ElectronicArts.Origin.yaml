@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageIdentifier: ElectronicArts.Origin
-PackageVersion: 10.5.93.46608
+PackageVersion: 10.5.98.47688
 PackageName: Origin
 Publisher: ElectronicArts
 License: Copyright (c) Electronic Arts
@@ -13,7 +14,7 @@ PackageUrl: https://www.origin.com/
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.dm.origin.com/download
-  InstallerSha256: 8E0224F1A660233952FC322D15634312801CD38E6AB1458FBAA0103C2C5305BF
+  InstallerSha256: 59D6E7EB22F3D7320327B4216FF016D1477D9AF5307105FC8916323376AD0E0A
   InstallerType: exe
   InstallerSwitches:
     SilentWithProgress: /Silent
