@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageIdentifier: TIDAL.TIDAL
 Publisher: TIDAL Music AS
 PackageName: TIDAL
-PackageVersion: 2.25.0
+PackageVersion: 2.27.6
 Moniker: TIDAL
 MinimumOSVersion: 10.0.0.0
 ShortDescription: TIDAL is a global music streaming service with high fidelity sound, hi-def video quality, and expertly curated playlists.
@@ -11,7 +12,7 @@ InstallerType: exe
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.tidal.com/desktop/TIDALSetup.exe
-  InstallerSha256: 8837BA0B66CBF1861AEDE0F21FCBE3C3A9B0F725215ED14D950298E17C58DCE1
+  InstallerSha256: 4535605984C557CFD2DE6597FC607142C5712EF75A58EEDB8698B3DD6CFF9E61
 PackageLocale: en-US
 ManifestType: singleton
 ManifestVersion: 1.0.0
