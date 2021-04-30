@@ -1,0 +1,21 @@
+# Automatically updated by the winget bot at 2021/Apr/30
+﻿PackageIdentifier: Garmin.Express
+Publisher: Garmin
+PackageName: Express
+PackageVersion: 7.4.2.0
+Moniker: GarminExpress
+MinimumOSVersion: 10.0.0.0
+ShortDescription: Garmin Express updates maps and software, syncs with Garmin Connect and registers your device.
+PackageUrl: https://www.garmin.com/en-US/software/express/windows/
+License: Copyright (c) 1996-2020 Garmin Ltd
+InstallerType: exe
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.garmin.com/omt/express/GarminExpress.exe
+  InstallerSha256: 159F5BF2E443E617E4FD77DA59CCF37C437DA2EE751BB722E8B59A556F71F05B
+  InstallerSwitches:
+    Silent: /quiet /norestart
+    SilentWithProgress: /passive /norestart
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
