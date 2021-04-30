@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageIdentifier: Nlitesoft.NTLite
 Publisher: Nlitesoft
 PackageName: NTLite
-PackageVersion: 2.0.0.7820
+PackageVersion: 2.1.0.7862
 License: © 2014-2020 Nlitesoft
 InstallerType: exe
 Moniker: ntlite
@@ -13,7 +14,7 @@ Installers:
 - Architecture: x64
   InstallerType: inno
   InstallerUrl: https://downloads.ntlite.com/files/NTLite_setup_x64.exe
-  InstallerSha256: 1A018FCD61C475C0327919B46A4375F5DD00F28054C6C28E35D02F804C8DB305
+  InstallerSha256: B5388B6798B547AF5E339DF3D65863EDEE03A50D2EBA70DF951BD34A64ABC484
 PackageLocale: en-US
 ManifestType: singleton
 ManifestVersion: 1.0.0
