@@ -1,7 +1,8 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageIdentifier: NimbusWeb.NimbusNote
 PackageName: NimbusNote
 Moniker: NimbusNote
-PackageVersion: 6.29.1
+PackageVersion: 6.37.1
 Publisher: NimbusWeb
 License: Copyright (C) 2020 NimbusWeb
 LicenseUrl: https://nimbusweb.me/terms-and-conditions.php
@@ -15,7 +16,7 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://nimbusweb.me/nimbusnote.exe
   InstallerType: exe
-  InstallerSha256: C190C7C71EC3711A6C8C2D49DB1F3F2E7F4FE1B8554785D348CE5827F40A47EF
+  InstallerSha256: A1FFD650DDF33758266872B350906D818CCAA091D46165E8B45CEDC4E4CDDBCD
   InstallerSwitches:
     Silent: /S
     SilentWithProgress: /S
