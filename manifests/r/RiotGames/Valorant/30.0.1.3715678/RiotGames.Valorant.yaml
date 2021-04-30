@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageIdentifier: RiotGames.Valorant
-PackageVersion: 20.23.9.3392104
+PackageVersion: 30.0.1.3715678
 PackageName: Valorant
 Publisher: Riot Games
 Tags:
@@ -13,7 +14,7 @@ InstallerType: exe
 Installers:
 - Architecture: x64
   InstallerUrl: https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.ap.exe
-  InstallerSha256: 5CC3FA883C983BA24CB9D5A910FCD842F139AAAF8633A35A6AD5278F2E05A35F
+  InstallerSha256: B32CAA881D35E6E3EA07BE5C6D781421193B496C06999B5C71AA2FCC5501FE75
   InstallerSwitches:
     Silent: --mode unattended
     SilentWithProgress: --mode unattended
