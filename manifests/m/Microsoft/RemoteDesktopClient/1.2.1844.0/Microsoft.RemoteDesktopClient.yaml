@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageIdentifier: Microsoft.RemoteDesktopClient
-PackageVersion: 1.2.1755.0
+PackageVersion: 1.2.1844.0
 PackageName: Remote Desktop Client
 Publisher: Microsoft Corporation
 License: Copyright (c) Microsoft Corporation
@@ -12,7 +13,7 @@ PackageUrl: https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windo
 Installers:
 - Architecture: x64
   InstallerUrl: https://go.microsoft.com/fwlink/?linkid=2068602
-  InstallerSha256: FFBD076D70EFDB4AF199476DAAE71FD15A964B64F5E58B281D7DFBE25ABD746F
+  InstallerSha256: 94E0B28E90E77E81D0D465A75ECFFFB38B86D2AF8A0783A354C21515061D9AC5
   InstallerType: msi
 PackageLocale: en-US
 ManifestType: singleton
