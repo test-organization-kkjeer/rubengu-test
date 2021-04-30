@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/Apr/30
 ﻿PackageIdentifier: WhatsApp.WhatsApp
-PackageVersion: 2.2108.8
+PackageVersion: 2.2114.9
 PackageName: WhatsApp
 Publisher: WhatsApp
 License: Copyright (c) 2020 WhatsApp
@@ -10,7 +11,7 @@ PackageUrl: https://www.whatsapp.com/
 Installers:
 - Architecture: x64
   InstallerUrl: https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe
-  InstallerSha256: 4095C9025648F398BB1D276CBCDF6A63DE58870D3F7B85F6F9199247D4A37113
+  InstallerSha256: 41A7E06CDA8EE6CFD65FA438CAA69A99D96E1FF0EBBE876CBF4452C10B7B252F
   InstallerType: exe
 PackageLocale: en-US
 ManifestType: singleton
