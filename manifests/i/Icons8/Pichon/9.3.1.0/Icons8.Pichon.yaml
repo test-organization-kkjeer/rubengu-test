@@ -1,0 +1,25 @@
+# Automatically updated by the winget bot at 2021/Apr/30
+﻿PackageIdentifier: Icons8.Pichon
+PackageVersion: 9.3.1.0
+PackageName: Pichon
+Publisher: Icons8
+License: © 2018 Icons8 LLC
+LicenseUrl: https://icons8.com/license
+Moniker: pichon
+Tags:
+- icons8
+- icons
+- pichon
+ShortDescription: Search for icons and drag to any app. Works offline.
+PackageUrl: https://icons8.com/app
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://s.icons8.com/download/Icons8App_for_Windows/PichonSetup.exe
+  InstallerSha256: E91B628C4550FCE92DADDD05281EEFF56B5E61FD6AD37A2D99E4BA819DD3EFF2
+  InstallerType: inno
+  InstallerSwitches:
+    Silent: /VERYSILENT
+    SilentWithProgress: /VERYSILENT
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
