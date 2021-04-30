@@ -1,0 +1,33 @@
+# Automatically updated by the winget bot at 2021/Apr/30
+﻿PackageName: Google Chrome
+Publisher: Google
+PackageIdentifier: Google.Chrome
+PackageVersion: 68.83.32861
+Moniker: googlechrome
+Author: Google
+License: Proprietary freeware, based on open source components
+MinimumOSVersion: 10.0.0.0
+Tags:
+- Browser
+- Google
+- Chromium
+Protocols:
+- http
+- https
+FileExtensions:
+- html
+- htm
+- url
+InstallerType: msi
+ShortDescription: A fast, secure, and free web browser built for the modern web. Chrome syncs bookmarks across all your devices, fills out forms automatically, and so much more.
+PackageUrl: https://www.google.com/chrome/
+LicenseUrl: https://www.google.com/chrome/terms/
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi
+  InstallerSha256: 4505521C9DBDC41D856FA96CE8D714C85D445153F137162E374EA2DCD0EFFCED
+  InstallerLocale: en-US
+  Scope: machine
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
