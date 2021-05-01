@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/May/01
 ﻿PackageIdentifier: DeepL.DeepL
-PackageVersion: 2.2.0
+PackageVersion: 2.4.0
 PackageName: DeepL
 Publisher: DeepL
 License: (c) 2021 DeepL GmbH
@@ -20,7 +21,7 @@ FileExtensions:
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.deepl.com/windows/download/full/DeepLSetup.exe
-  InstallerSha256: DBFCBBFF492F0E13E1ECFDD0DDBD214A92D26FB85C19F01C512BFAC5E4E4B999
+  InstallerSha256: 56DCEF54BD1AB01506DFF2C80D7BE24B4A3BD0EA92AEFB24784C828CF04D1194
   InstallerType: exe
   InstallerSwitches:
     Silent: /silent
