@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/May/01
 ﻿PackageIdentifier: Cloudflare.Warp
-PackageVersion: 1.3.184.0
+PackageVersion: 1.4.107.0
 PackageName: Warp Client
 Publisher: Cloudflare
 License: Copyright (c) Cloudflare Inc.
@@ -14,7 +15,7 @@ PackageUrl: https://one.one.one.one/
 Installers:
 - Architecture: x64
   InstallerUrl: https://1.1.1.1/Cloudflare_WARP_Release-x64.msi
-  InstallerSha256: 2429A824ADB02E49568866F8E28192F5FFCB5B37150C8AD9CC17E64CA8EC3D7B
+  InstallerSha256: 24854D4D0B1327AF371CC2BBD4496B2B58F17BD5CEA2554C41B36D58D5ECE3B4
   InstallerType: msi
 PackageLocale: en-US
 ManifestType: singleton
