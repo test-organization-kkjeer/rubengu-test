@@ -1,8 +1,9 @@
+# Automatically updated by the winget bot at 2021/May/05
 ﻿PackageIdentifier: SoftPerfect.SoftPerfectNetworkScanner
 Publisher: SoftPerfect
 Author: SoftPerfect
 PackageName: SoftPerfectNetworkScanner
-PackageVersion: 8.0.1
+PackageVersion: 8.0.2
 License: © 2000–2020 SoftPerfect Pty Ltd, Australia
 InstallerType: exe
 Tags:
@@ -14,7 +15,7 @@ PackageUrl: https://www.softperfect.com/products/networkscanner/
 Installers:
 - Architecture: x64
   InstallerUrl: https://www.softperfect.com/download/files/netscan_setup.exe
-  InstallerSha256: 5EE028C3612DC91C853F9392A6A8B1E6575ECA242F98A913EDEB43D93057F53C
+  InstallerSha256: 35A0124EA318C812DAA71605B5C4F6DAD62E06BFD465E24B866AEAF243F7D998
   InstallerSwitches:
     Silent: /VERYSILENT
     SilentWithProgress: /VERYSILENT
