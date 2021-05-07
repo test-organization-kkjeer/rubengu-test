@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/May/07
 ﻿PackageIdentifier: Fork.Fork
-PackageVersion: 1.59.0
+PackageVersion: 1.62.0
 PackageName: Fork
 Publisher: Fork
 License: Copyright (c) 2020 Dan Pristupov
@@ -12,7 +13,7 @@ PackageUrl: https://git-fork.com
 Installers:
 - Architecture: x86
   InstallerUrl: https://git-fork.com/update/win/ForkInstaller.exe
-  InstallerSha256: 119F8D2459D58A4E7684518A62CB832C517C7BD5B2501B8DB540AF32ED778C34
+  InstallerSha256: E319E8F1D0E06800363326AD5016C3304A1F275C120EBE79751C0BB676A523E5
   InstallerType: exe
   InstallerSwitches:
     Silent: /s
