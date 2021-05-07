@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/May/07
 ﻿PackageIdentifier: XnSoft.XnViewMP
-PackageVersion: 0.98.2
+PackageVersion: 0.98.3
 PackageName: XnViewMP
 Publisher: XnSoft
 License: GFL SDK/GflAx
@@ -10,7 +11,7 @@ PackageUrl: https://www.xnview.com/en/xnviewmp/
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.xnview.com/XnViewMP-win-x64.exe
-  InstallerSha256: F58C80028729E095C86E71873DC902339158D9102B75FB0C5835120E9D0FEEAB
+  InstallerSha256: 6784C15B6B400C6181D2A1D989E83234D1286469217BD71EBB49A7CED4A803EF
   InstallerType: inno
 PackageLocale: en-US
 ManifestType: singleton
