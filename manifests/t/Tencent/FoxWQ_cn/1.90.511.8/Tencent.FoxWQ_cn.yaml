@@ -1,5 +1,6 @@
+# Automatically updated by the winget bot at 2021/May/07
 ﻿PackageIdentifier: Tencent.FoxWQ_cn
-PackageVersion: 1.80.514.8
+PackageVersion: 1.90.511.8
 PackageName: Fox WeiQi
 Publisher: Tencent
 License: Copyright (c) Tencent
@@ -10,7 +11,7 @@ PackageUrl: https://www.foxwq.com/
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.foxwq.com/Public/Soft/install.exe
-  InstallerSha256: 51718DBCA6344865FB147BADC2FE1A83F413AA9B8435BBF35DE7E60C016A5C26
+  InstallerSha256: 8AE46C186AE5E79E0D21861A4E3623EB03D00E03733B8BEBCCCB730DFA658B6E
   InstallerType: exe
   InstallerSwitches:
     Silent: /S
