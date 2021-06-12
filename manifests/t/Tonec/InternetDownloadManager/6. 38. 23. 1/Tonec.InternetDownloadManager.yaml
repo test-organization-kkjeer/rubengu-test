@@ -1,0 +1,22 @@
+# Automatically updated by the winget bot at 2021/May/05
+﻿PackageName: Internet Download Manager
+Publisher: Tonec Inc.
+PackageIdentifier: Tonec.InternetDownloadManager
+PackageVersion: 6. 38. 23. 1
+Moniker: idm
+License: Copyright (c) Tonec Inc.
+Tags:
+- download manager
+InstallerType: exe
+ShortDescription: Internet Download Manager (IDM) is a tool to increase download speeds by up to 5 times, resume and schedule downloads.
+PackageUrl: https://www.internetdownloadmanager.com/
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.internetdownloadmanager.com/idman638build17.exe
+  InstallerSha256: 80BCAA3D882B1CA1DB100AA3A43F568217B816E5066ABA70C3A07569CC659B10
+  InstallerSwitches:
+    Silent: /skipdlgs
+    SilentWithProgress: /skipdlgs
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
