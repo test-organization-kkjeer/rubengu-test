@@ -1,0 +1,27 @@
+# Automatically updated by the winget bot at 2021/May/03
+﻿PackageIdentifier: TimKosse.FilezillaClient
+PackageName: Filezilla Client
+PackageVersion: 3.53.1
+Publisher: Tom Kosse
+Moniker: Filezilla
+License: GNU General Public License Version 2
+MinimumOSVersion: 10.0.0.0
+PackageUrl: https://filezilla-project.org/
+Tags:
+- File Transfer
+- FTP
+- FTP over TLS
+- FTPS
+- SFTP
+InstallerType: exe
+Installers:
+- Architecture: x64
+  InstallerUrl: https://download.filezilla-project.org/client/FileZilla_latest_win64-setup.exe
+  InstallerSha256: 806796F73115BBDF3CABCAB672B7BD9DF34225F7DDE7B34470B41B4A74ABDD0A
+  InstallerSwitches:
+    Silent: /S
+    SilentWithProgress: /S
+ShortDescription: TimKosse.FilezillaClient
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
