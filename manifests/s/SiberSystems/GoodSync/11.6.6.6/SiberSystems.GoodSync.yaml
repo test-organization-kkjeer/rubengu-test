@@ -1,0 +1,20 @@
+# Automatically updated by the winget bot at 2021/May/06
+﻿PackageIdentifier: SiberSystems.GoodSync
+Publisher: Siber Systems
+PackageName: GoodSync
+PackageVersion: 11.6.6.6
+License: Copyright © 2009 - 2020 Siber Systems, Inc. All rights reserved.
+InstallerType: exe
+Moniker: goodsync
+Tags:
+- sync backup cloud
+ShortDescription: Backup and sync your files with ease using GoodSync. Our simple and secure software will ensure that you never lose your files.
+PackageUrl: https://www.goodsync.com/
+Installers:
+- Architecture: x86
+  InstallerType: nullsoft
+  InstallerUrl: https://www.goodsync.com/download/GoodSync-v11-Setup.exe
+  InstallerSha256: 4427365854DF371D39F3EA0F4454A0EC4F1D1187693B51061FB835D466DC8EAF
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.0.0
